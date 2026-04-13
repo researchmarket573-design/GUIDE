@@ -1,183 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ride-Hailing & Parcel Delivery Guidelines</title>
-    <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #000000;
-            background-color: #ffffff;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px 40px 20px; /* No top padding - tight to the top */
-            font-size: 12px; /* Base text size */
-        }
-        h1, h2, h3 {
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            font-weight: 600;
-            color: #0f5132; /* Dark bottle green */
-            margin-top: 20px;
-            margin-bottom: 16px;
-            font-size: 14px; /* Headline size */
-        }
-        h1 {
-            font-size: 14px;
-            font-weight: 700;
-            text-align: center;
-            margin: 20px 0 30px 0;
-            letter-spacing: -0.3px;
-        }
-        h2 {
-            font-size: 14px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #d2d2d7;
-            margin-top: 40px;
-            text-align: center;
-        }
-        h3 {
-            font-size: 14px;
-            margin-top: 30px;
-            text-align: left;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 16px 0;
-        }
-        li {
-            padding: 6px 0;
-            position: relative;
-            padding-left: 20px;
-            font-size: 12px;
-        }
-        li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #0f5132;
-            font-weight: bold;
-        }
-        .section {
-            margin-bottom: 50px;
-        }
-        .notice {
-            background-color: #fff8e6;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 50px 0;
-            border: 1px solid #ffcc00;
-            font-size: 12px;
-        }
-        .notice h3 {
-            margin-top: 0;
-            margin-bottom: 12px;
-            text-align: center;
-        }
-        .support {
-            text-align: center;
-            margin: 70px 0 40px;
-            font-size: 12px;
-        }
-        .support h3 {
-            font-size: 14px;
-            margin-bottom: 16px;
-        }
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            font-weight: 600;
-            margin-top: 70px;
-            color: #0f5132;
-        }
-        .contact-info {
-            color: #0f5132;
-            font-weight: 500;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HYZR Guidelines</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f2f4f7;
+}
+
+/* Container (mobile feel) */
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #0f5132;
+    margin-bottom: 15px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Titles */
+.card h2 {
+    text-align: center;
+    font-size: 15px;
+    color: #0f5132;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+/* Colors */
+.allowed {
+    color: #198754;
+    font-weight: 600;
+}
+
+.not-allowed {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+}
+
+li {
+    font-size: 13px;
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0f5132;
+}
+
+/* Notice */
+.notice {
+    background: #fff3cd;
+    border: 1px solid #ffe69c;
+    text-align: center;
+}
+
+.notice li::before {
+    content: "⚠";
+    color: #ff9900;
+}
+
+/* Support */
+.support {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.support span {
+    color: #0f5132;
+    font-weight: 600;
+}
+</style>
 </head>
+
 <body>
-    <h1>Ride-Hailing &amp; Parcel Delivery Guidelines</h1>
 
-    <div class="section">
-        <h2>Ride-Hailing Guidelines</h2>
+<div class="container">
 
-        <h3>Allowed in the Ride</h3>
+    <div class="header">Ride & Parcel Guidelines</div>
+
+    <!-- Ride -->
+    <div class="card">
+        <h2>🚖 Ride-Hailing</h2>
+
+        <h3 class="allowed">Allowed</h3>
         <ul>
-            <li>Small handbags and personal luggage</li>
-            <li>Personal electronic devices (mobile phones, laptops, etc.)</li>
-            <li>Approved pet carriers (only under the pet-friendly ride option)</li>
-            <li>Properly packed food items</li>
+            <li>Small luggage</li>
+            <li>Electronics</li>
+            <li>Pet carriers</li>
+            <li>Packed food</li>
         </ul>
 
-        <h3>Not Allowed in the Ride</h3>
+        <h3 class="not-allowed">Not Allowed</h3>
         <ul>
-            <li>Alcohol, drugs, or tobacco products</li>
-            <li>Firearms, sharp objects, or explosives</li>
-            <li>Illegal substances or contraband</li>
-            <li>Large cargo, heavy machinery, or oversized packages</li>
-            <li>Offensive behavior, harassment, or damage to the vehicle</li>
+            <li>Alcohol & drugs</li>
+            <li>Weapons</li>
+            <li>Illegal items</li>
+            <li>Oversized goods</li>
         </ul>
 
-        <h3>Safety &amp; Conduct Rules</h3>
+        <h3>Safety Rules</h3>
         <ul>
-            <li>Follow the driver’s instructions at all times</li>
-            <li>Keep the vehicle clean and avoid littering</li>
-            <li>Seat belts must be worn throughout the ride</li>
-            <li>Loud, disruptive, or inappropriate behavior is not permitted</li>
-            <li>Smoking inside the vehicle is strictly prohibited</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Parcel Delivery Guidelines</h2>
-
-        <h3>Allowed for Delivery</h3>
-        <ul>
-            <li>Documents and letters</li>
-            <li>Small personal packages</li>
-            <li>Clothing, accessories, and non-perishable items</li>
-            <li>Sealed and approved food items</li>
-        </ul>
-
-        <h3>Prohibited for Delivery</h3>
-        <ul>
-            <li>Cash, gold, or valuable jewelry</li>
-            <li>Alcohol, drugs, or tobacco products</li>
-            <li>Weapons, explosives, or flammable items</li>
-            <li>Live animals, perishable goods, or illegal substances</li>
-            <li>Fragile items without proper protective packaging</li>
-        </ul>
-
-        <h3>Parcel Safety Rules</h3>
-        <ul>
-            <li>Ensure parcels are securely packed for safe transportation</li>
-            <li>Provide accurate pickup and drop-off information</li>
-            <li>Do not send restricted or prohibited items</li>
-            <li>The sender is fully responsible for verifying parcel contents</li>
+            <li>Follow driver instructions</li>
+            <li>Wear seatbelt</li>
+            <li>Keep vehicle clean</li>
         </ul>
     </div>
 
-    <div class="notice">
-        <h3>Important Notice</h3>
+    <!-- Parcel -->
+    <div class="card">
+        <h2>📦 Parcel Delivery</h2>
+
+        <h3 class="allowed">Allowed</h3>
         <ul>
-            <li>Any violation of these guidelines may result in penalties or account suspension</li>
-            <li>Hyzr reserves the right to inspect suspicious parcels for security and compliance</li>
+            <li>Documents</li>
+            <li>Small packages</li>
+            <li>Clothes</li>
+        </ul>
+
+        <h3 class="not-allowed">Prohibited</h3>
+        <ul>
+            <li>Cash & gold</li>
+            <li>Alcohol</li>
+            <li>Weapons</li>
+        </ul>
+
+        <h3>Safety Rules</h3>
+        <ul>
+            <li>Pack items securely</li>
+            <li>Provide correct details</li>
+            <li>Sender responsible</li>
         </ul>
     </div>
 
+    <!-- Notice -->
+    <div class="card notice">
+        <h3>⚠ Important</h3>
+        <ul>
+            <li>Violations may lead to suspension</li>
+            <li>Hyzr may inspect parcels</li>
+        </ul>
+    </div>
+
+    <!-- Support -->
     <div class="support">
-        <h3>Customer Support</h3>
-        <p>Email: <span class="contact-info">customercare@hyzr.in</span></p>
-        <p>Phone: <span class="contact-info">07316981570</span></p>
+        <p><strong>Support</strong></p>
+        <p>Email: <span>customercare@hyzr.in</span></p>
+        <p>Phone: <span>+91 8301848918</span></p>
     </div>
 
-    <div class="footer">
-        Hyzr | Beyond Mobility
-    </div>
+</div>
+
 </body>
 </html>
